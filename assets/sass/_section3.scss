@@ -1,0 +1,77 @@
+@use"./extend" as *;
+.section3{
+    margin: 100px 0;
+    .section3_top{
+        @extend .flex;
+        justify-content: space-between;
+        .paragraph{
+            padding: 20px 0;
+        }
+    }
+    .section3_top_right{
+        .btn{
+            background-color: transparent;
+            border: 2px solid  #a259ff;
+        }
+    }
+}
+.section3_bottom{
+    .boxes{
+        .box{
+            border-radius: 20px;
+width: 330px;
+height: 469px;
+background: #3b3b3b;
+h2{
+  padding: 10px 20px;
+font-weight: 600;
+font-size: 22px;
+line-height: 1.4;
+text-transform: capitalize;
+color: #fff;
+}
+.box_top{
+    padding: 20px;
+    @extend .flex;
+    justify-content: start;
+    gap: 10px;
+    p{
+     
+font-weight: 400;
+font-size: 16px; 
+line-height: 1.4;
+color: #fff;
+    }
+}
+.box_bottom{
+    padding: 0 20px;
+    @extend .flex;
+    justify-content: space-between;
+    p{
+    
+font-weight: 400;
+font-size: 12px;
+line-height: 1.1;
+color: #858584;
+    }
+    h2{
+    
+font-weight: 400;
+font-size: 16px; 
+line-height: 1.4;
+color: #fff;
+    }
+}
+        }
+
+    }
+}
+.boxes{
+    @extend .flex;
+    gap: 100px;
+}
+@media(max-width:920px){
+    .boxes{
+        flex-wrap: wrap;
+    }
+}
