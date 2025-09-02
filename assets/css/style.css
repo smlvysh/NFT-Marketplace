@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
-.flex, .showcase .showcase_all, .showcase .showcase_all .showcase_left .showcase_left_bottom > div, .showcase .showcase_all .showcase_left .showcase_left_bottom, .showcase .showcase_all .showcase_right .showcase_right_bottom, .header .header_all, .header .header_all .header_left, .header .header_all .header_right, .header .header_all .header_right ul, .btn {
+.flex, .section1 .pics, .section1 .pics .pic_bottom, .showcase .showcase_all, .showcase .showcase_all .showcase_left .showcase_left_bottom > div, .showcase .showcase_all .showcase_left .showcase_left_bottom, .showcase .showcase_all .showcase_right .showcase_right_bottom, .header .header_all, .header .header_all .header_left, .header .header_all .header_right, .header .header_all .header_right ul, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +181,41 @@ body {
   .showcase_left_bottom {
     flex-direction: column;
     gap: 10px;
+  }
+}
+.section1 {
+  margin: 30px 0;
+}
+.section1 .paragraph {
+  padding: 20px 0;
+}
+.section1 .pics {
+  gap: 100px;
+}
+.section1 .pics h2 {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #fff;
+}
+.section1 .pics .pic_bottom {
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+.section1 .pics .pic_bottom p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+@media (max-width: 942px) {
+  .pics {
+    flex-wrap: wrap;
+    gap: 50px;
   }
 }
 
