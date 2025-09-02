@@ -1,1 +1,101 @@
-@use"./extend" as *;
+@use "./extend" as *;
+.showcase {
+  margin: 50px 0;
+  .showcase_all {
+    @extend .flex;
+    .showcase_left {
+      h1 {
+        font-weight: 600;
+        font-size: 67px;
+        line-height: 1.1;
+        text-transform: capitalize;
+        color: #fff;
+      }
+      .paragraph {
+        padding: 30px 0;
+      }
+      .btn {
+        width: 224px;
+      }
+      .showcase_left_bottom {
+        padding: 30px 0;
+        & > div {
+          @extend .flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+        }
+        @extend .flex;
+        justify-content: start;
+        gap: 50px;
+        h2 {
+          font-family: "Space Mono", sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+
+          text-transform: capitalize;
+          color: #fff;
+        }
+        .paragraph {
+          font-weight: 400;
+          font-size: 23px;
+          text-transform: capitalize;
+          color: #fff;
+        }
+      }
+    }
+    .showcase_right{
+        width: 50%;
+height: 450px;
+border-radius:  20px;
+background: #3b3b3b; h2{
+padding: 20px;
+font-weight: 600;
+font-size: 22px;
+line-height: 1.4;
+text-transform: capitalize;
+color: #fff;
+    }
+.showcase_right_bottom{
+   @extend .flex;
+   gap: 10px;
+   justify-content: start;
+   padding: 0 20px;
+   p{
+  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.4;
+color: #fff;
+   }
+}
+    }
+  }
+}
+@media(max-width:820px){
+    .showcase_all{
+        flex-direction: column;
+    }
+    
+}
+@media(max-width:588px){
+    .showcase .showcase_all .showcase_left h1{
+        font-size: 38px;
+    }
+    .showcase_left .paragraph{
+        font-size: 12px;
+    }
+    .showcase .showcase_all .showcase_right{
+        height: 300px;
+    }
+    // .showcase_all .showcase_left .showcase_left_bottom h2{
+    //  font-size: 18px;
+    // }
+    // .showcase_left .showcase_left_bottom .paragraph{
+    //     font-size: 16px;}
+    .showcase_left_bottom{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
