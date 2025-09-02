@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
-.flex, .section1 .pics, .section1 .pics .pic_bottom, .showcase .showcase_all, .showcase .showcase_all .showcase_left .showcase_left_bottom > div, .showcase .showcase_all .showcase_left .showcase_left_bottom, .showcase .showcase_all .showcase_right .showcase_right_bottom, .header .header_all, .header .header_all .header_left, .header .header_all .header_right, .header .header_all .header_right ul, .btn {
+.flex, .section2 .card p, .section1 .pics, .section1 .pics .pic_bottom, .showcase .showcase_all, .showcase .showcase_all .showcase_left .showcase_left_bottom > div, .showcase .showcase_all .showcase_left .showcase_left_bottom, .showcase .showcase_all .showcase_right .showcase_right_bottom, .header .header_all, .header .header_all .header_left, .header .header_all .header_right, .header .header_all .header_right ul, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,6 +216,56 @@ body {
   .pics {
     flex-wrap: wrap;
     gap: 50px;
+  }
+}
+.section2 {
+  margin: 50px 0;
+}
+.section2 .title {
+  padding: 30px 0;
+}
+.section2 .card {
+  border-radius: 20px;
+  width: 240px;
+  height: 316px;
+  background: #3b3b3b;
+}
+.section2 .card img {
+  opacity: 50%;
+}
+.section2 .card p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1096px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 810px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 537px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 390px) {
+  .title {
+    font-size: 26px;
   }
 }
 
