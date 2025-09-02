@@ -1,0 +1,40 @@
+@use"./extend" as *;
+.header{
+    padding: 30px 0;
+    .header_all{
+        @extend .flex;
+        justify-content: space-between;
+        .header_left{
+            @extend .flex;
+        
+            h2{
+                color: #fff;
+            }
+        }
+        .header_right{
+            @extend .flex;
+            ul{
+                @extend .flex;
+                gap: 20px;
+                li{
+                    a{
+                     
+font-weight: 600;
+font-size: 16px;
+line-height: 1.4;
+text-align: center;
+color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:860px){
+    .header_right ul li{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+}

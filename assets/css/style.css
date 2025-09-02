@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+.flex, .header .header_all, .header .header_all .header_left, .header .header_all .header_right, .header .header_all .header_right ul, .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 0px 30px;
+  width: 152px;
+  height: 60px;
+  background: #a259ff;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  gap: 10px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+body {
+  background: #2b2b2b;
+}
+
+#bars {
+  display: none;
+}
+
+.header {
+  padding: 30px 0;
+}
+.header .header_all {
+  justify-content: space-between;
+}
+.header .header_all .header_left h2 {
+  color: #fff;
+}
+.header .header_all .header_right ul {
+  gap: 20px;
+}
+.header .header_all .header_right ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .header_right ul li {
+    display: none;
+  }
+  #bars {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
