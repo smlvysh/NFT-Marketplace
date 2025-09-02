@@ -1,0 +1,48 @@
+@use"./extend" as *;
+.section5{
+    margin: 50px 0;
+    .paragraph{
+        padding: 30px 0;
+    }
+    .all_box{
+        border-radius: 20px;
+padding: 10px 30px 30px;
+width: 330px;
+height: 439px;
+background: #3b3b3b;
+h2{
+padding: 10px 0;
+font-weight: 600;
+font-size: 22px;
+line-height: 1.4;
+text-transform: capitalize;
+text-align: center;
+color: #fff;
+}
+p{
+   
+font-weight: 300;
+font-size: 17px;
+line-height: 1.4;
+text-align: center;
+color: #fff;
+}
+    }
+}
+.all{
+    @extend .flex;
+    gap: 100px;
+}
+@media(max-width:1260px){
+    .all{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:360px){
+    .section5 .paragraph{
+        font-size: 16px;
+    }
+    .all .all_box p{
+        font-size: 12px;
+    }
+}
